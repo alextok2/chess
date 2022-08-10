@@ -1,0 +1,102 @@
+
+
+
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+<link type="text/css" rel="stylesheet" href="{% static 'playground/css/board.css' %}">
+<script  src="{% static 'playground\js\game_logic.js' %}" defer></script>
+
+<table>
+    <tr>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="0"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="1"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="2"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="3"></p></td>
+    </tr>
+    <tr>
+        <td class="black_cage"> <p class="red_piece" id="4"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="5"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="6"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="7"></p></td>
+        <td class="white_cage"></td>
+    </tr>
+    <tr>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="8"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="9"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="10"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="red_piece" id="11"></p></td>
+    </tr>
+    <tr>
+        <td class="black_cage"></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"></td>
+        <td class="white_cage"></td>
+    </tr>
+    <tr>
+        <td class="white_cage"></td>
+        <td class="black_cage"></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"></td>
+    </tr>
+    <tr>
+        <td class="black_cage"> <p class="black_piece" id="12"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="black_piece" id="13"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="black_piece" id="14"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="black_piece" id="15"></p></td>
+        <td class="white_cage"></td>
+    </tr>
+    <tr>
+        <td class="white_cage"> </td>
+        <td class="black_cage"><p class="black_piece" id="16"></p></td>
+        <td class="white_cage"> </td>
+        <td class="black_cage"><p class="black_piece" id="17"></p></td>
+        <td class="white_cage"> </td>
+        <td class="black_cage"><p class="black_piece" id="18"></p></td>
+        <td class="white_cage"> </td>
+        <td class="black_cage"><p class="black_piece" id="19"></p></td>
+    </tr>
+    <tr>
+        <td class="black_cage"> <p class="black_piece" id="20"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="black_piece" id="21"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="black_piece" id="22"></p></td>
+        <td class="white_cage"></td>
+        <td class="black_cage"> <p class="black_piece" id="23"></p></td>
+        <td class="white_cage"></td>
+    </tr>
+</table>
+
+<div class="red_turn_text">
+    Reds turn
+</div>
+<p id="divider">|</p>
+<div class="black_turn_text">
+    Blacks turn
+</div>
+
+{% endblock %}

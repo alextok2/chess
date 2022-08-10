@@ -1,0 +1,45 @@
+td{
+    width: 65px;
+    height: 65px;
+    
+    
+}
+tr{
+    display: flex;
+}
+.black_cage{
+    background-color: #BA7A3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white_cage{
+    background-color: #F0D2B4;
+    
+}
+
+.red_piece{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.black_piece{
+    width: 40px;
+    height: 40px;
+    padding: px;
+    
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.king.red_piece{
+    background-color: orange;
+}
+
+.king.black_piece{
+    background-color: purple;
+}
